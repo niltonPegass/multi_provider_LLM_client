@@ -11,6 +11,6 @@ from gemini_config import API_KEY
 
 client = genai.Client(api_key=API_KEY)
 
-print("Modelos disponíveis para sua chave:\n")
+print("Modelos disponíveis:\n")
 for modelo in client.models.list():
     print(f"  {modelo.name}")
