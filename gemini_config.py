@@ -18,10 +18,10 @@ COMO OBTER A API KEY (gratuita, sem cartão de crédito):
     2. Clique em "Get API Key" → "Create API Key"
     3. Cole a chave no campo API_KEY abaixo
 
-⚠️  SEGURANÇA — Sobre a API Key:
+[!]  SEGURANÇA — Sobre a API Key:
     Esta versão expõe a chave DIRETAMENTE no código APENAS para fins didáticos.
     
-    ❌ NUNCA faça isso em produção!
+    [!] NUNCA faça isso em produção!
     
     Em produção, use VARIÁVEIS DE AMBIENTE:
         import os
@@ -137,14 +137,14 @@ TEMPERATURE: float = 0.3
 """
 Controla o NÍVEL DE ALEATORIEDADE nas respostas do modelo.
 
-📊 ESCALA DE TEMPERATURA NO GEMINI:
+[!] ESCALA DE TEMPERATURA NO GEMINI:
     
     0.0 (Determinístico)
     ├─→ Respostas idênticas para mesma entrada
     ├─→ Cada palavra é a "mais provável" apenas
     └─→ Ideal para: consultas técnicas, cálculos, fatos
     
-    0.3 - 0.7 (Balanceado) ✅ PADRÃO
+    0.3 - 0.7 (Balanceado) > PADRÃO
     ├─→ Respostas consistentes com variação natural
     ├─→ Bom para maioria dos casos
     └─→ Ideal para: análise, explicações, diálogos
@@ -190,20 +190,20 @@ Use exemplos práticos quando pertinente. Responda em português.
 """
 Instrução de SISTEMA que define a "personalidade" e comportamento do modelo.
 
-🎯 PROPÓSITO:
-    O System Prompt é como a "instrução operacional" que o modelo recebe.
-    Define como ele deve se comportar para TODAS as requisições.
+PROPÓSITO:
+O System Prompt é como a "instrução operacional" que o modelo recebe.
+Define como ele deve se comportar para TODAS as requisições.
 
 ARQUITETURA DA CONVERSA:
     
     1. Sistema (System Prompt)
-       └─→ "Você é um assistente técnico..."
+       └→ "Você é um assistente técnico..."
     
     2. Usuário (user)
-       └─→ "Explique embeddings em NLP"
+       └→ "Explique embeddings em NLP"
     
     3. Assistente (model/response)
-       └─→ Responde CONSIDERANDO o system prompt
+       └→ Responde CONSIDERANDO o system prompt
     
     ┌──────────────────────────────────────────────┐
     │ A resposta é influenciada pelo contexto do   │
