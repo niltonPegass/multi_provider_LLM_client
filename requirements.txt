@@ -1,0 +1,12 @@
+# ================================================================================
+# requirements.txt — Project Dependencies
+# ================================================================================
+# Install:
+#   pip install -r requirements.txt
+#   pipenv install -r requirements.txt
+#
+# Note: google-genai is the NEW official SDK (2024+).
+#       Do NOT install google-generativeai — it is deprecated.
+# ================================================================================
+
+google-genai>=1.0.0
