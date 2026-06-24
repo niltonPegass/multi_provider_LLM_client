@@ -1,0 +1,9 @@
+# requirements.txt — Project Dependencies
+#
+# Install all dependencies at once:
+#   pip install -r requirements.txt
+#   pipenv install -r requirements.txt
+#
+# NOTE: use google-genai (new SDK), NOT google-generativeai (deprecated).
+
+google-genai>=1.0.0
